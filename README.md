@@ -40,3 +40,8 @@ identity = cv2.filter2D(src=image, ddepth=-1, kernel=kernel1)
 ```python
 identity = cv2.blur(src=image, ksize=(5,5))
 ```
+
+```python
+#Define 5x5 kernel and normalize it by dividing by the num. elements in kernel
+kernel2 = np.ones((5, 5), np.float32) / 25
+```
